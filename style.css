@@ -1,0 +1,66 @@
+/* Initializing Fonts */
+@font-face {
+  font-family: TEMPEST;
+  src: url(./Assets/Fonts/TEMPEST.ttf);
+}
+
+@font-face {
+  font-family: blue-cashew;
+  src: url(./Assets/Fonts/Blue_Cashews.otf);
+}
+
+@font-face {
+  font-family: genishin;
+  src: url(./Assets/Fonts/zh-cn.ttf);
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #FF7D29, #FFBF78, #FFEEA9);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-screen{
+  text-align: center;
+}
+
+.col-12 h1{
+  font-size: 10vw;
+  color: white;
+  font-family: "genishin";
+  text-shadow: black 0px 0px 10px;
+  margin-top: 4vw;
+}
+
+.gamemodes{
+  margin-top: 6rem;
+  height: 20vw;
+}
+
+.btn{
+  font-family: "genishin" !important;
+  font-size: 7vw !important;
+  background-color: #FEFFD2 !important;
+  border-color: gold !important;
+  color: gold !important;
+  height: 60%;
+  width: 60%;
+  border-radius: 0.75rem !important;
+  transition: all 0.1s ease;
+}
+
+.btn:hover{
+  transform: scale(1.2);
+}

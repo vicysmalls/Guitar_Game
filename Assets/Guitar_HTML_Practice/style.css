@@ -1,0 +1,138 @@
+:root{
+    --fret-height: 3vw;
+    --fret-width: 5vw;
+    --md-fret-height: 0.5vw;
+    --md-fret-width: var(--fret-width);
+    --notes-width: 2vw;
+    --shadow-height: 0.2vw;
+    --fret-bar-width: 0.2vw;
+    --string-3height: 0.2vw;
+    --string-4height: 0.3vw;
+    --string-5height: 0.4vw;
+    --string-6height: 0.5vw;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: var(--notes-width) var(--fret-width) var(--fret-width) var(--fret-width) var(--fret-width) var(--fret-width)
+                                              var(--fret-width) var(--fret-width) var(--fret-width) var(--fret-width) var(--fret-width)
+                                              var(--fret-width) var(--fret-width);
+    grid-template-rows: var(--md-fret-height) var(--shadow-height) var(--fret-height) var(--shadow-height) var(--fret-height) 
+                        var(--string-3height) var(--shadow-height) var(--fret-height) var(--string-4height) var(--shadow-height)
+                        var(--fret-height) var(--string-5height) var(--shadow-height) var(--fret-height) var(--string-6height)
+                        var(--shadow-height) var(--md-fret-height);
+    gap: 0px;
+}
+
+/* Colors */
+.note-column{
+    height: 18.6vw;
+    background-color: rgb(33, 31, 29);
+    grid-column: 1/2;
+    grid-row: 1 / span row;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.String.Shadow{
+    background-color: #928967;
+}
+
+.String{
+    background-color: #c5bb97;
+}
+
+.fret{
+    background-color: #6f572f;
+}
+
+.medium-fret{
+    background-color: #6f572f;
+}
+
+.fret{
+    border-right: 0.2vw solid white;
+}
+
+.medium-fret{
+    border-right: 0.2vw solid white;
+}
+
+h2{
+    color: white;
+    margin-top: -0.5vw;
+}
+
+/* Dots */
+.circle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    background-color: rgb(33, 31, 29);
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+/* Positioning */
+.space-13{
+    grid-column: 2 / -1;
+}
+
+.space-26{
+    grid-column: 2 / -1;
+}
+
+.space-39{
+    grid-column: 2 / -1;
+}
+
+.space-40{
+    grid-column: 2 / -1;
+}
+
+.space-53{
+    grid-column: 2 / -1;
+}
+
+.space-54{
+    grid-column: 2 / -1;
+}
+
+.space-67{
+    grid-column: 2 / -1;
+}
+
+.space-68{
+    grid-column: 2 / -1;
+}
+
+.space-81{
+    grid-column: 2 / -1;
+}
+
+.space-82{
+    grid-column: 2 / -1;
+}
+
+/* Spacing */
+.E{
+    margin-top: 0.4vw !important;
+}
+
+.A{
+    margin-top: 0.2vw !important
+}
+
+.D{
+    margin-top: 0.2vw !important
+}
+
+.E2{
+    margin-top: 0.1vw !important;
+}
+
+

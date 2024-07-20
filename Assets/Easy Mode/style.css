@@ -1,0 +1,72 @@
+@font-face {
+font-family: 'Bravura';
+src: url(https://cdn.jsdelivr.net/npm/@vexflow-fonts/bravura/bravura.woff2) format(woff2);
+}
+@font-face {
+font-family: 'Academico';
+src: url(https://cdn.jsdelivr.net/npm/@vexflow-fonts/academico/academico.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: genishin;
+    src: url(../Fonts/zh-cn.ttf);
+}
+
+.background{
+    background-color: whitesmoke;
+}
+
+.quit{
+    text-align: center;
+    font-family: "genishin" !important;
+    margin-top: 5vw;
+}
+
+.start{
+    text-align: center;
+    font-family: "genishin" !important;
+    margin-top: 5vw;   
+}
+
+/* prevent scrolling in iframe */
+iframe{
+    padding-bottom: 1vw;
+    pointer-events: none;
+}
+
+button{
+    font-size: 6vw !important;
+    background-color: #FEFFD2 !important;
+    border-color: gold !important;
+    color: gold !important;
+    height: 10vw;
+    width: 40vw;
+    margin-bottom: 2vw !important;
+}
+
+.row{
+    height: 100vh;
+}
+
+.staff{
+    margin-bottom: -8vw;
+}
+
+.musical-note{
+    margin-top: 2vw;
+    font-family: 'Bravura' !important;
+}
+
+#output{
+    margin-top: -23vh !important;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+#UI {
+    display: none;
+}
+
+
