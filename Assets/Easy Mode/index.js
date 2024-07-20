@@ -124,11 +124,16 @@ function changeNote(note,color){
 
 const musical_note = document.getElementById('Note');
 const iframe = document.getElementById('Iframe'); // Get the fretboard.html file document
-const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-const All_medium_frets = iframeDocument.getElementsByClassName('medium-fret');
-const All_frets = iframeDocument.getElementsByClassName('fret');
-const All_strings = iframeDocument.getElementsByClassName('String');
-const All_shadowStrings = iframeDocument.getElementsByClassName('Shadow');
+let iframeDocument, All_medium_frets, All_frets, All_strings, All_shadowStrings;
+// Make sure iframe is loaded completely
+iframe.onload = function() {
+    iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    All_medium_frets = iframeDocument.getElementsByClassName('medium-fret');
+    All_frets = iframeDocument.getElementsByClassName('fret');
+    All_strings = iframeDocument.getElementsByClassName('String');
+    All_shadowStrings = iframeDocument.getElementsByClassName('Shadow');
+};
+
 
 var text = 0;
 var Note = 1;
